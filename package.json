@@ -1,0 +1,23 @@
+{
+  "name": "lexstead-dsh-workbench",
+  "version": "0.1.0-preview",
+  "description": "Chinese legal workbench for the DeepSeek Harness macOS client",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "setup": "node cli.mjs setup",
+    "start": "node cli.mjs start",
+    "stop": "node cli.mjs stop",
+    "uninstall": "node cli.mjs uninstall",
+    "doctor": "node cli.mjs doctor",
+    "test": "node --test portable.test.mjs"
+  },
+  "dependencies": {
+    "ws": "8.21.0",
+    "yaml": "2.8.1"
+  }
+}
